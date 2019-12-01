@@ -6,11 +6,11 @@
              mc:Ignorable="d"
              x:Class="MyFit.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout VerticalOptions="Center">
+        <Button Text="Завтрак" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
+        <Button Text="Обед" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
+        <Button Text="Ужин" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
+        <Button Text="Перекус" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
     </StackLayout>
 
 </ContentPage>
