@@ -5,11 +5,4 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MyFit.App">
-    <Application.Resources>
-        <ResourceDictionary >
-            <ResourceDictionary.MergedDictionaries >
-                <ResourceDictionary Source="styles.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
 </Application>

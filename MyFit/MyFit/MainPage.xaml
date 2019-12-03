@@ -7,7 +7,25 @@
              x:Class="MyFit.MainPage">
 
     <StackLayout VerticalOptions="Center">
-        <Button Text="Завтрак" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="9*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+           
+
+        </Grid>
+        <Image Source="add.png" HeightRequest="200" WidthRequest="200"/>
         <Button Text="Обед" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
         <Button Text="Ужин" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
         <Button Text="Перекус" BackgroundColor="GreenYellow" HeightRequest="40" WidthRequest="40" BorderRadius="20"/>
