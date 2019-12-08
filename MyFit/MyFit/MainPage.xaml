@@ -3,41 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:MyFit;assembly=MyFit"
              mc:Ignorable="d"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom"
              BarBackgroundColor="#4DCFE0"
              BarTextColor="Black"
              x:Class="MyFit.MainPage">
-    
-    <ContentPage Title="Дневник">
-        <StackLayout VerticalOptions="Center" Margin="10">
-            <Grid Margin="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="9*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="35" ></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Image Grid.Column="0" Grid.Row="0" Source="add.png"/>
-                <Button Grid.Column="1" Grid.Row="0" Text="Завтрак" BackgroundColor="#4DCFE0" BorderRadius="20"/>
-                <Image Grid.Column="0" Grid.Row="2" Source="add.png"/>
-                <Button Grid.Column="1" Grid.Row="2" Text="Обед" BackgroundColor="#4DCFE0" BorderRadius="20"/>
-                <Image Grid.Column="0" Grid.Row="4" Source="add.png"/>
-                <Button Grid.Column="1" Grid.Row="4" Text="Ужин" BackgroundColor="#4DCFE0" BorderRadius="20"/>
-                <Image Grid.Column="0" Grid.Row="6" Source="add.png"/>
-                <Button Grid.Column="1" Grid.Row="6" Text="Перекус" BackgroundColor="#4DCFE0" BorderRadius="20"/>
-            </Grid>
-        </StackLayout>
 
-    </ContentPage>
+    <NavigationPage Title="Дневник">
+        <x:Arguments>
+            <local:DiaryPage />
+        </x:Arguments>
+    </NavigationPage>
     
 </TabbedPage>
